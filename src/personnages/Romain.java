@@ -7,7 +7,7 @@ public class Romain {
 	public Romain(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
-	} 
+	}
 
 	public String getNom() {
 		return nom;
@@ -21,4 +21,12 @@ public class Romain {
 		return "Le romain " + nom + " : ";
 	}
 
+	public void recevoirCoup(int forceCoup) {
+		force = force - forceCoup;
+		if (force < 1) {
+			parler("J'abandone !");
+		} else {
+			parler("Aïe");
+		}
+	}
 }
