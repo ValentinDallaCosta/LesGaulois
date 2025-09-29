@@ -11,11 +11,11 @@ public class Chaudron {
 	}
 
 	public boolean resterPotion() {
-		return quantitePotion != 0;
+		return quantitePotion > 0;
 	}
 
 	public int prendreLouche() {
-		quantitePotion -= 1;
+		quantitePotion--;
 		if (quantitePotion < 1) {
 			forcePotion = 0;
 		}
