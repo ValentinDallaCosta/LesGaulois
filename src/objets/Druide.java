@@ -1,4 +1,7 @@
-package personnages;
+package objets;
+
+import personnages.Chaudron;
+import personnages.Gaulois;
 
 public class Druide {
 
@@ -21,7 +24,7 @@ public class Druide {
 
 	public void fabriquerPotion(int quantite, int forcePotion) {
 		chaudron.remplirChaudron(quantite, forcePotion);
-		System.out.println("J'ai concocté " + quantite + " doses de potion magique. " + "Elle a une force de "
+		System.out.println("J'ai concoctï¿½ " + quantite + " doses de potion magique. " + "Elle a une force de "
 				+ forcePotion + ".");
 	}
 
@@ -29,14 +32,14 @@ public class Druide {
 		String nomGaulois = gaulois.getNom();
 		if (chaudron.resterPotion()) {
 			if ("Obelix".equals(nomGaulois)) {
-				parler("Non.. " + nomGaulois + " Non !... Et tu le sais très bien !");
+				parler("Non.. " + nomGaulois + " Non !... Et tu le sais trï¿½s bien !");
 			} else {
 				int forcePotion = chaudron.prendreLouche();
 				gaulois.boirePotion(forcePotion);
 				parler("Tiens " + nomGaulois + " un peu de potion magique !");
 			}
 		} else {
-			parler("Désolé " + nomGaulois + " il n'y a plus une seule goute de potion.");
+			parler("Dï¿½solï¿½ " + nomGaulois + " il n'y a plus une seule goute de potion.");
 		}
 	}
 

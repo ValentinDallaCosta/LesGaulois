@@ -1,8 +1,8 @@
 package test_fonctionnel;
 
+import objets.Druide;
 import personnages.Gaulois;
 import personnages.Romain;
-import personnages.Druide;
 
 public class TestGaulois {
 	public static void main(String[] args) {
