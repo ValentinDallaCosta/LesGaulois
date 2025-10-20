@@ -1,7 +1,6 @@
-package objets;
+package personnages;
 
-import personnages.Chaudron;
-import personnages.Gaulois;
+import objets.Chaudron;
 
 public class Druide {
 
